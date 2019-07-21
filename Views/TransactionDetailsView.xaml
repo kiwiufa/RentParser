@@ -1,0 +1,27 @@
+﻿<Window x:Class="RentParser.Views.TransactionDetailsView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RentParser.Views"
+        mc:Ignorable="d"
+        Title="TransactionDetailsView" Height="450" Width="500">
+    <Grid>
+        <Label Content="Particulars:" HorizontalAlignment="Left" Margin="27,317,0,0" VerticalAlignment="Top" Width="93"/>
+        <Label Content="Code:" HorizontalAlignment="Left" Margin="27,276,0,0" VerticalAlignment="Top" Width="93"/>
+        <Label Content="Reference:" HorizontalAlignment="Left" Margin="27,232,0,0" VerticalAlignment="Top" Width="93"/>
+        <Label Content="Type:" HorizontalAlignment="Left" Margin="218,27,0,0" VerticalAlignment="Top" Width="93"/>
+        <Label Content="Account:" HorizontalAlignment="Left" Margin="27,201,0,0" VerticalAlignment="Top" Width="93"/>
+        <Label Content="Sender:" HorizontalAlignment="Left" Margin="29,58,0,0" VerticalAlignment="Top" Width="93"/>
+        <Label Content="Date:" HorizontalAlignment="Left" Margin="29,27,0,0" VerticalAlignment="Top" Width="93"/>
+        <Label Content="Amount:" HorizontalAlignment="Left" Margin="27,159,0,0" VerticalAlignment="Top" Width="93"/>
+        <Label Content="Processed Date:" HorizontalAlignment="Left" Margin="27,348,0,0" VerticalAlignment="Top" Width="93" RenderTransformOrigin="0.431,1.699"/>
+        <Label Content="Payee:" HorizontalAlignment="Left" Margin="28,99,0,0" VerticalAlignment="Top" Width="93"/>
+        <Label x:Name="date_label" Content="{Binding TransactionEntry.Date, Mode=OneWay}" HorizontalAlignment="Left" Margin="90,27,0,0" VerticalAlignment="Top" Width="93" Height="26"/>
+        <Label x:Name="type_label" Content="" HorizontalAlignment="Left" Margin="280,27,0,0" VerticalAlignment="Top" Width="93"/>
+        <Label x:Name="sender_label" Content="{Binding TransactionEntry.OtherPartyAccount, Mode=OneWay}" HorizontalAlignment="Left" Margin="90,58,0,0" VerticalAlignment="Top" Width="283" Height="26"/>
+        <Label x:Name="payee_label" Content="{Binding TransactionEntry.Payee, Mode=OneWay}" HorizontalAlignment="Left" Margin="90,99,0,0" VerticalAlignment="Top" Width="294" Height="26"/>
+        <Label x:Name="amount_label" Content="{Binding TransactionEntry.Amount, Mode=OneWay}" HorizontalAlignment="Left" Margin="108,159,0,0" VerticalAlignment="Top" Width="93"/>
+        <Label x:Name="account_label" Content="{Binding TransactionEntry.ThisPartyAccount, Mode=OneWay}" HorizontalAlignment="Left" Margin="108,201,0,0" VerticalAlignment="Top" Width="276" Height="26"/>
+    </Grid>
+</Window>
