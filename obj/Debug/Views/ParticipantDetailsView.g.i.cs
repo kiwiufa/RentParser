@@ -143,6 +143,22 @@ namespace RentParser.ViewModel {
             #line default
             #line hidden
             return;
+            case 6:
+            
+            #line 24 "..\..\..\Views\ParticipantDetailsView.xaml"
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click_1);
+            
+            #line default
+            #line hidden
+            return;
+            case 7:
+            
+            #line 25 "..\..\..\Views\ParticipantDetailsView.xaml"
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click);
+            
+            #line default
+            #line hidden
+            return;
             }
             this._contentLoaded = true;
         }

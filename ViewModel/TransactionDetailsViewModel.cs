@@ -9,11 +9,11 @@ namespace RentParser.ViewModel
 {
     public class TransactionDetailsViewModel
     {
-        public Transaction TransactionEntry { get; set; }
+        public Transaction Transaction { get; set; }
 
         public TransactionDetailsViewModel(Transaction transactionEntry)
         {
-            TransactionEntry = transactionEntry;
+            Transaction = transactionEntry;
         }
     }
 }

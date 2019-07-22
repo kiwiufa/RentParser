@@ -22,6 +22,6 @@
         <Label x:Name="payee_label" Content="{Binding TransactionEntry.Payee, Mode=OneWay}" HorizontalAlignment="Left" Margin="90,99,0,0" VerticalAlignment="Top" Width="294" Height="26"/>
         <Label x:Name="amount_label" Content="{Binding TransactionEntry.Amount, Mode=OneWay}" HorizontalAlignment="Left" Margin="108,159,0,0" VerticalAlignment="Top" Width="93"/>
         <Label x:Name="account_label" Content="{Binding TransactionEntry.ThisPartyAccount, Mode=OneWay}" HorizontalAlignment="Left" Margin="108,201,0,0" VerticalAlignment="Top" Width="276" Height="26"/>
-        <TextBox x:Name="sender_textbox" HorizontalAlignment="Left" Height="23" Margin="108,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" MouseRightButtonDown="edit_sender"/>
+        <Button x:Name="sender_button" HorizontalAlignment="Left" Margin="122,58,0,0" VerticalAlignment="Top" Width="334" Height="26" Click="Sender_button_Click"/>
     </Grid>
 </Window>
