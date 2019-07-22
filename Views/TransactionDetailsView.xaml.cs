@@ -28,6 +28,11 @@ namespace RentParser.Views
             InitializeComponent();
         }
 
+        //MouseDoubleClick event handler for your textBox1
+        private void payee_label_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            String test = "test";
+        }
         //private void PopulateControls() //TODO: Change to data bindings 
         //{
         //    date_label.Content = _viewModel.TransactionEntry.Date;

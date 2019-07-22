@@ -42,6 +42,7 @@ namespace RentParser
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
             ViewModel.LoadTransactions();
+            ViewModel.LoadModels();
         }
 
         private void DefineTableStructure()
