@@ -26,7 +26,7 @@
                     <GridViewColumn DisplayMemberBinding=
                       "{Binding Path=Amount}" Header="Amount" Width="100"/>
                     <GridViewColumn DisplayMemberBinding=
-                      "{Binding Path=Payee}" Header="Payee" Width="100"/>
+                      "{Binding Path=PayeeLabel}" Header="Payee" Width="100"/>
                     <GridViewColumn DisplayMemberBinding=
                       "{Binding Path=Particulars}" Header="Particulars" Width="100"/>
                 </GridView>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RentParser.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,9 @@ namespace RentParser.ViewModel
 {
     public class TransactionDetailsViewModel
     {
-        public TransactionEntry TransactionEntry { get; set; }
+        public Transaction TransactionEntry { get; set; }
 
-        public TransactionDetailsViewModel(TransactionEntry transactionEntry)
+        public TransactionDetailsViewModel(Transaction transactionEntry)
         {
             TransactionEntry = transactionEntry;
         }

@@ -14,7 +14,7 @@ namespace RentParser.ViewModel
         private IDataProvider<Participant> _participantProvier;
         private TransactionDataProvider _transactionDataProvider;
         private TransactionEntry _selectedTransaction;
-        public ObservableCollection<TransactionEntry> Transactions { get; }
+        public ObservableCollection<Transaction> Transactions { get; }
         public ObservableCollection<Participant> Participants { get; set;}
         public ObservableCollection<Category> Categories { get; set;}
 
@@ -23,7 +23,7 @@ namespace RentParser.ViewModel
             _categoryProvier = new DataProvider<Category>(_categoryFilename);
             _participantProvier = new DataProvider<Participant>(_participantsFilename);
             _transactionDataProvider = new TransactionDataProvider();
-            Transactions = new ObservableCollection<TransactionEntry>();
+            Transactions = new ObservableCollection<Transaction>();
         }
 
         public async void LoadModels()

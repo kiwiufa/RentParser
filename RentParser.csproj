@@ -69,9 +69,13 @@
     <Compile Include="DataProvider\TransactionDataProvider.cs" />
     <Compile Include="Model\Category.cs" />
     <Compile Include="Model\Participant.cs" />
+    <Compile Include="Model\Transaction.cs" />
     <Compile Include="Model\TransactionEntry.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\TransactionDetailsViewModel.cs" />
+    <Compile Include="Views\ParticipantDetailsView.xaml.cs">
+      <DependentUpon>ParticipantDetailsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\TransactionDetailsView.xaml.cs">
       <DependentUpon>TransactionDetailsView.xaml</DependentUpon>
     </Compile>
@@ -87,6 +91,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\ParticipantDetailsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\TransactionDetailsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

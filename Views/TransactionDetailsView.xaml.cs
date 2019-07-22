@@ -1,4 +1,5 @@
-﻿using RentParser.ViewModel;
+﻿using RentParser.Model;
+using RentParser.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,18 +22,18 @@ namespace RentParser.Views
     public partial class TransactionDetailsView : Window
     {
         public TransactionDetailsViewModel ViewModel { get; }
-        public TransactionDetailsView(TransactionEntry transactionEntry)
+        public TransactionDetailsView(Transaction transaction)
         {
-            ViewModel = new TransactionDetailsViewModel(transactionEntry);
+            ViewModel = new TransactionDetailsViewModel(transaction);
             DataContext = ViewModel;
             InitializeComponent();
         }
 
-        //MouseDoubleClick event handler for your textBox1
-        private void payee_label_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        private void edit_sender(object sender, MouseButtonEventArgs e)
         {
-            String test = "test";
+
         }
+
         //private void PopulateControls() //TODO: Change to data bindings 
         //{
         //    date_label.Content = _viewModel.TransactionEntry.Date;

@@ -19,6 +19,7 @@ using System.Windows.Shapes;
 using CsvHelper;
 using RentParser.ViewModel;
 using RentParser.Views;
+using RentParser.Model;
 
 namespace RentParser
 {
@@ -130,7 +131,7 @@ namespace RentParser
 
         private void ListViewItem_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            TransactionEntry selectedEntry = ((TransactionEntry)((ListViewItem)sender).Content);
+            Transaction selectedEntry = ((Transaction)((ListViewItem)sender).Content);
             TransactionDetailsView detailsView = new TransactionDetailsView(selectedEntry);
             detailsView.Show();
         }

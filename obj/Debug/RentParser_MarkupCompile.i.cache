@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Repos\RentParser\RentParser\obj\Debug\
+C:\Repos\Study\RentParser\obj\Debug\
 RentParser
 none
 false
 DEBUG;TRACE
-C:\Repos\RentParser\RentParser\App.xaml
-21097172555
+C:\Repos\Study\RentParser\App.xaml
+3-459357712
 
-15-2136357496
-161750108126
-MainWindow.xaml;Views\TransactionDetailsView.xaml;
+171007947991
+1627955753
+MainWindow.xaml;Views\ParticipantDetailsView.xaml;Views\TransactionDetailsView.xaml;
 
 True
 
