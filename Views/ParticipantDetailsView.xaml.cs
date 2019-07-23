@@ -26,6 +26,9 @@ namespace RentParser.ViewModel
         public ParticipantDetailsView(ParticipantDetailsViewModel viewModel)
         {
             ViewModel = viewModel;
+            DataContext = ViewModel;
+//            ViewModel.Participant.Name
+//ViewModel.Participant.Accounts
             InitializeComponent();
         }
 
