@@ -133,6 +133,7 @@ namespace RentParser
         {
             Transaction selectedEntry = ((Transaction)((ListViewItem)sender).Content);
             TransactionDetailsView detailsView = new TransactionDetailsView(selectedEntry);
+            detailsView.Owner = this;
             detailsView.Show();
         }
     }

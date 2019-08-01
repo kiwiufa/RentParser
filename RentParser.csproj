@@ -72,6 +72,7 @@
     <Compile Include="Model\Transaction.cs" />
     <Compile Include="Model\TransactionEntry.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\ParticipantDetailsViewModel.cs" />
     <Compile Include="ViewModel\TransactionDetailsViewModel.cs" />
     <Compile Include="Views\ParticipantDetailsView.xaml.cs">
       <DependentUpon>ParticipantDetailsView.xaml</DependentUpon>

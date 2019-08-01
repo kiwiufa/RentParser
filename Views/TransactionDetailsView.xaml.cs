@@ -27,11 +27,25 @@ namespace RentParser.Views
             ViewModel = new TransactionDetailsViewModel(transaction);
             DataContext = ViewModel;
             InitializeComponent();
+            sender_button.Content = (transaction.Payee!=null)?transaction.Payee.Name:transaction.PayeeLabel;
         }
 
         private void edit_sender(object sender, MouseButtonEventArgs e)
         {
 
+        }
+
+        private void Sender_button_Click(object sender, RoutedEventArgs e)
+        {
+            ParticipantDetailsViewModel viewModel = new ParticipantDetailsViewModel(ViewModel.Transaction);
+            ParticipantDetailsView participantView = new ParticipantDetailsView(viewModel);
+            participantView.Owner = this;
+            participantView.Show();
+            Console.WriteLine("Let's see");
+            //Transaction selectedEntry = ((Transaction)((ListViewItem)sender).Content);
+            //TransactionDetailsView detailsView = new TransactionDetailsView(selectedEntry);
+            //detailsView.Owner = this;
+            //detailsView.Show();
         }
 
         //private void PopulateControls() //TODO: Change to data bindings 

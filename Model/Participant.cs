@@ -15,5 +15,10 @@ namespace RentParser.Model
         public String AssociatedProperty { get; set; }
 
         public String Commentary { get; set; }
+
+        public Participant()
+        {
+            Accounts = new ObservableCollection<string>();
+        }
     }
 }

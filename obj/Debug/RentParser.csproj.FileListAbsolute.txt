@@ -72,3 +72,5 @@ C:\Repos\Study\RentParser\obj\Debug\RentParser.exe
 C:\Repos\Study\RentParser\obj\Debug\RentParser.pdb
 C:\Repos\Study\RentParser\obj\Debug\Views\ParticipantDetailsView.g.cs
 C:\Repos\Study\RentParser\obj\Debug\Views\ParticipantDetailsView.baml
+G:\Study\RentParser\obj\Debug\Views\ParticipantDetailsView.g.cs
+G:\Study\RentParser\obj\Debug\Views\ParticipantDetailsView.baml
