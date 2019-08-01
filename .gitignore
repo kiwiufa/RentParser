@@ -8,3 +8,7 @@ bin/Debug/RentParser.exe
 bin/Debug/RentParser.pdb
 obj/Debug/RentParser.exe
 obj/Debug/RentParser.pdb
+obj/Debug/RentParser.csprojAssemblyReference.cache
+obj/Debug/DesignTimeResolveAssemblyReferences.cache
+.vs/RentParser/v16/Server/sqlite3/storage.ide
+.vs/RentParser/v16/.suo
